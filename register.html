@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 style="text-align: center; color: rgb(105,105,105)"><b>Register</b></h1>
+  <div class="topnav">
+    <a href="index.html">HOME</a>
+    <a href="football.html">Football</a>
+    <a href="basketball.html">Basketball</a>
+    <a href="squash.html">squash</a>
+    <a href="swimming.html">swimming</a>
+    <a class="active" href="register.html">Register</a>
+</div><br>
+  <form onsubmit="return verifyPassword()" action="action_page.php">
+    <div class="container">
+
+      <p style="color:white ;">*Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="firstname" style="color:white ;"><b>First Name</b></label>
+      <input type="text" placeholder="firstname" name="firstname" id="firstname" style="color: white;" required><br>
+
+      <label for="lastname" style="color:white ;"><b>Last Name</b></label>
+      <input type="text" placeholder="lastname" name="lastname" id="lastname" style="color: white;" required><br>
+
+      <label for="phonenumber" style="color:white ;"><b>phone number</b></label>
+      <input type="text" placeholder="Enter number" name="phonenumber" id="phonenumber" style="color: white;" required>
+      <span id="messagephone" style="color:rgb(238, 8, 8);font-style: oblique;font-size: medium;"> </span><br>
+
+      <label for="address" style="color:white ;"><b>address</b></label>
+      <input type="text" placeholder="address" name="address" id="address" style="color: white;" required>
+
+
+      <label for="email" style="color:white ;"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" style="color: white;" required>
+      <span id="messageem" style="color:rgb(238, 8, 8);font-style: oblique;font-size: medium;"> </span><br>
+
+
+      <label for="pw" style="color:white ;"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pw" id="pw" style="color: white;" required>
+      <span id="message" style="color:rgb(238, 8, 8);font-style: oblique;font-size: medium;"> </span><br>
+
+
+      <b style="color:white ;">Gender :</b>
+      <input type="radio" id="male" name="gender" value="male" style="color: white;" required>
+      <label for="male" style="color:white ;"><b>male</b></label>
+      <input type="radio" id="female" name="gender" value="female" style="color: white;">
+      <label for="female" style="color:white ;"><b>female</b></label>
+
+      <input type="submit" value="submit" class="registerbtn">
+
+      <div class="container signin">
+        <p style="color:white ;">Already have an account? <a href="#">Sign in</a>.</p>
+      </div>
+    </div>
+
+
+
+  </form>
+  <script src="main.js"></script>
+</body>
+
+</html>
